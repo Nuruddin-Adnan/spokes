@@ -84,7 +84,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
 
@@ -94,6 +94,11 @@
 
 .gallery .gallery-item.item-2 {
     background: url('../images/group_rides.jpg') no-repeat center center/cover;
+}
+
+.gallery .gallery-item.item-3 {
+    background: url('../images/gallery-item-3.png') no-repeat center center/cover;
+    padding: 100px 0;
 }
 
 .gallery .gallery-content {
