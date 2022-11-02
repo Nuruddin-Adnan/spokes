@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    font-weight: 500;
+    border-radius: 4px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.btn-cyan {
+    background: #046fa4;
+    color: #fff;
+}
+
+.btn-cyan:hover {
+    background: #078dd0;
+    color: #fff;
+}
+
+.section-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* end of global css */
+
+/*############ header start ############*/
+.header {
+    background: url('../images/Header.jpg') no-repeat center center/cover;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding-top: 0px
+    }
+}
+
+.navbar .navbar-brand {
+    width: 93px;
+}
+
+@media (min-width: 992px) {
+    .header h1 {
+        font-size: 60px;
+    }
+}
+
+.header .arrow-btn {
+    border: 2px solid #fff;
+    border-radius: 0px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.header .arrow-btn img {
+    height: 30px;
+}
+
+.header .arrow-btn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/*############//End of header ############*/
+
+/*############ gallery start ############*/
+.gallery .gallery-item {
+    position: relative;
+
+}
+
+.gallery .gallery-item::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.gallery .gallery-item.item-1 {
+    background: url('../images/helmet.JPG') no-repeat center center/cover;
+}
+
+.gallery .gallery-item.item-2 {
+    background: url('../images/group_rides.jpg') no-repeat center center/cover;
+}
+
+.gallery .gallery-content {
+    position: relative;
+    z-index: 1;
+}
+
+.gallery .gallery-item h2 {
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+    .gallery .gallery-item h2 {
+        font-size: 60px;
+    }
+}
+
+/*############//End of gallery ############*/
+
+
+/*############ watch-card start ############*/
+.watch-card {
+    height: 100%;
+}
+
+.watch-card .btn-link {
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 0;
+    padding-bottom: 5px;
+    position: relative;
+    font-size: 14px;
+}
+
+.watch-card .btn-link::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #046fa4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s linear;
+}
+
+.watch-card .btn-link img {
+    width: 25px;
+    transition: all 0.2s linear;
+    transform: translateX(5px);
+}
+
+.watch-card .btn-link:hover img {
+    transform: translateX(10px);
+}
+
+.watch-card .btn-link:hover::before {
+    width: 100%;
+}
+
+/*############//End of watch-card ############*/
+
+/*############ news start ############*/
+.news .watch-card {
+    background-color: #f6f6f6;
+}
+
+/*############//End of news ############*/
+
+/*############ footer start ############*/
+.footer .footer-top {
+    background: #1f1f1f;
+    padding: 80px 0;
+}
+
+.footer .footer-bottom {
+    background: #181818;
+    padding: 20px 0;
+}
+
+.footer .nav-item .nav-link {
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer .nav-item .nav-link:hover {
+    text-decoration: underline;
+}
+
+/*############//End of footer ############*/
